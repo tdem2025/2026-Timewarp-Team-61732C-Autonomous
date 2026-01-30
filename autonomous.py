@@ -19,7 +19,7 @@ drone.set_drone_LED(*color_data)
 #note, after research putting * "unpacks it"
 #so then it won't dump it in like ((r, g, b)) but instead like (r,g,b)
 #must be tested
-drone.hover()
+drone.hover(5)
 
 
 drone.land()
