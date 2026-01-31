@@ -7,7 +7,7 @@ drone.pair()
 drone.takeoff()
 
 #Phase 1
-drone.set_drone_LED(0,0,255,100)
+drone.set_drone_LED(0,0,0,100)
 drone.move_distance(0, 0, 0.9,1)
 drone.hover(5)
 drone.set_yaw(0)
@@ -24,6 +24,9 @@ drone.set_drone_LED(*color_data)
 drone.hover(5)
 
 #Phase 2
+drone.move_distance(0, 0, ?,1)
+#will be determined later, will be tricky to get through holes,
+#due to possible errors in position of y
 drone.move_forward(distance=?, units="m", speed=1)
 drone.move_distance(0, ?, 0,1)
 drone.move_forward(distance=?, units="m", speed=1)
@@ -38,11 +41,12 @@ drone.set_drone_LED(*color_data)
 #Phase 3
 drone.move_distance(0, 0, ?,1)
 drone.move_forward(distance=?, units="m", speed=1)
-#code to align to not bump into yellow keyhole
+#have to code to align to not bump into yellow keyhole
+drone.move_distance(0, ?, 0,1)
 drone.move_distance(0, 0, ?,1)
 drone.move_distance(0, ?, 0,1)
 drone.move_forward(distance=?, units="m", speed=1)
-#code to align with bullseye for more points
+#have to code to align with bullseye for more points
 
 drone.land()
 
