@@ -21,7 +21,7 @@ drone.send_absolute_position(1.85, 0, 0.6, 0.5, 0, 0)
 drone.set_yaw(0)
 drone.send_absolute_position(1.85, 0, 0.6, 0.5, 0, 0)
 
-#Get First Mat Color, and show by changing both drone and controller colors.
+#Get First Mat Color, and show by changing both drone and controller colors, and printing RGB values
 color_data = drone.get_back_color("rgb")
 print(color_data)
 drone.set_drone_LED(*color_data, brightness = 255)
@@ -31,7 +31,7 @@ drone.set_controller_LED(*color_data, brightness = 255)
 drone.send_absolute_position(1.85, 0, 0.6, 0.5, 0, 0)
 drone.send_absolute_position(3.7, 0, 0.6, 0.5, 0, 0)
 
-#Get Second Mat Color, and show by changing both drone and controller colors.
+#Get Second Mat Color, and show by changing both drone and controller colors, and printing RGB values
 color_data = drone.get_back_color("rgb")
 print(color_data)
 drone.set_drone_LED(*color_data, brightness = 255)
