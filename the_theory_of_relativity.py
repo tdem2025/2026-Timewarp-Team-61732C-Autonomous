@@ -1,4 +1,4 @@
-#This is the theoretical perfect code
+#This is the theoretical perfect code to fly the course till the wind tunnel, and come back to land on the blue cube.
 #Import CoDrone EDU Libraries
 from codrone_edu.drone import *
 
