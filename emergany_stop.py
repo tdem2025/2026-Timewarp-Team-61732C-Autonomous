@@ -5,4 +5,4 @@ drone = Drone()
 drone.pair()
 
 drone.emergency_stop()
-#try doing drone.land()
+#we can try doing drone.land()

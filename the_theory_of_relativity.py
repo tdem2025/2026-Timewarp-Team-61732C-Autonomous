@@ -43,7 +43,8 @@ print(color_data2)
 drone.set_drone_LED(*color_data2, brightness = 255)
 drone.set_controller_LED(*color_data2, brightness = 255)
 
-#Go through wind tunnel
+#Go through wind tunnel twice and come back, try to land on the blue cube
+#we may need to remeasure some things.... or it was just the ac messing with us
 drone.send_absolute_position(4.55, 0, 160, 0.5, 0, 0)
 drone.set_yaw(0)
 drone.send_absolute_position(6.35, 0, 160, 0.5, 0, 0)
@@ -58,6 +59,7 @@ drone.send_absolute_position(0.45, 0, 160, 0.5, 0, 0)
 drone.set_yaw(0)
 drone.send_absolute_position(0.45, 0, 0.9, 0.5, 0, 0)
 drone.set_yaw(0)
+
 #End code with a land and close
 drone.land()
 
