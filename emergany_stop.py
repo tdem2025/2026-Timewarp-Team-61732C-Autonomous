@@ -15,4 +15,3 @@ drone.set_controller_LED(*color_data, brightness = 255)
 
 
 drone.close()
-2
